@@ -1,0 +1,5 @@
+__default__:
+  - "-G team281"
+  - "-R 'select[mem>30000] rusage[mem=30000]' -M 30000"
+  - "-q normal"
+  - "-J snakemake_trial"
