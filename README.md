@@ -7,7 +7,7 @@ These are the minimum packages required for snakemake to work with profiles. Use
 # Snakemake commands to run 
     snakemake –n -s 01-snakefile.smk (-p is not needed)
 
-## Show wildcard – change A to bam
+## Explicit wildcard – change A to B on command line
     snakemake -n mapped_reads/B.bam -s 02-snakefile-wildcard.smk
 
 ## Use sample to replace wildcard
