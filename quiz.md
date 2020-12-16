@@ -9,7 +9,7 @@
       rule bwa_map:
           input:
               fa="data/genome.fa",
-              fq=expand("data//samples/{sample}.fastq",sample = SAMPLES)
+              fq=expand("data/samples/{sample}.fastq",sample = SAMPLES)
           output:
               expand("mapped_reads/{sample}.bam",sample = SAMPLES)
           shell:m"
